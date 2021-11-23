@@ -7,12 +7,39 @@
     <title>Consultar Clima</title>
 </head>
 <body>
-    <h1>Constultar Clima</h1>
-    <input type="text" id="nombreCiudad">
-    <button id="ciudadClima">Obtener clima</button>
-    <h4 id="clima"> </h4>
-    <h6>Creado Por Brayan D. Tobar</h6>
+    <div class="title">
+        <h1>Consultar Clima</h1>
+    </div>
 
+    <div class="main">
+        <input type="text" id="nombreCiudad" placeholder="Ingrese nombre de Ciudad ej: Pasto, Cali"> <br> <br>
+        <button id="ciudadClima">Obtener clima</button>
+        
+        <h2>Ciudad: <h2 id="ciudad"></h2></h2>
+        <h2>Denotacion del Pais: <h2 id="pais"></h2></h2>
+        
+        <div>
+            <table>
+                <tr>
+                    <th>Clima</th>
+                    <th>Viento</th>
+                    <th>Humedad</th>
+                    <th>Temperatura</th>
+                </tr>
+                <tr>
+                    <td id="clima"></td>
+                    <td id="viento"></td>
+                    <td id="humedad"></td>
+                    <td id="temperatura"></td>
+                </tr>
+            </table>
+        </div>
+
+    </div>
+
+    <div class="footer">
+        <h6>Creado Por Brayan D. Tobar</h6>
+    </div>
     <script type="module" src="js/script.js"></script>
 </body>
 </html>
