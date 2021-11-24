@@ -61,7 +61,7 @@ function completarDias(dias){
                         <th class="tableCab">Clima</th>
                         <th class="tableCab">Temperatura</th>
                         <th class="tableCab">Humedad</th>
-                        <th class="tableCab">Probabilidad de lluvia</th>
+                        <th class="tableCab">Vientos</th>
                     </tr>`
 
     dias.forEach(dia => {
@@ -71,7 +71,7 @@ function completarDias(dias){
                                 <th>${dia.weather[0].description}</th>
                                 <th>${dia.temp.day}°C</th>
                                 <th>${dia.humidity}%</th>
-                                <th>${dia.rain}%</th>
+                                <th>${dia.wind_speed} Km/h</th>
                             </tr>`
     });
 }
