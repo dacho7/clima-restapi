@@ -13,106 +13,58 @@
     <main>
         <section class="contorno">
             <div class="titulo">
-                <h2>Consultar Clima</h2>
+                <h2>Consultar Clima Actual por Ciudad</h2>
             </div>
 
 
             <div class="busqueda">
-                <input class="inBusqueda" placeholder="Digite Ciudad ej. Pasto, Cali..." type="text">
-                <button class="btnsearch">Buscar</button>
+                <input class="inBusqueda" id="nombreCiudad" placeholder="Digite Ciudad ej. Pasto, Cali..." type="text">
+                <button class="btnsearch" id="ciudadClima">Buscar</button>
             </div>
 
 
             <div class="resultado">
                 <div class="resultSuperior">
                     <div class="resultElemnts1">
-                        <img src="./recursos/cloudy.png" alt="">
+                        <img src="./recursos/imagenes/cloudy.png" alt="">
                     </div>
                     <div class="resultElemnts2">
-                        <h5>Clima: Nublado</h5> <br>
-                        <h5>Descripción: parcialmente Nublado</h5>
+                        <h5 id="descripClima">Descripción</h5> <br>
+                        <h5 id="clima">Clima</h5> 
                     </div>
                     <div class="resultElemnts3">
-                        <h5>Temperatura: 15</h5> <br>
-                        <h5>Viento: 1.3 m/s</h5>
+                        <h5 id="temperatura">Temperatura</h5> <br>
+                        <h5 id="viento">Viento</h5>
                     </div>
                 </div>
                 <div class="resultInferior">
                     <div class="resultcity">
-                        <h5>Ciudad: Cali, Co</h5>
+                        <h5 id="ciudad">Ciudad</h5>
                     </div>
                     <div class="resultHumedad">
-                        <h5>Humedad: 25%</h5>
+                        <h5 id="humedad">Humedad</h5>
                     </div>
                 </div>
             </div>
 
             <div class="historial">
-                <h3 class="historialTitulo">Historial De consultas</h3>
+                <h3 class="historialTitulo">Pronostico Dias Siguientes</h3>
             </div>
 
             <div class="consultas">
-                <table>
+                <table id="tab">
                     <tr>
-                        <th class="tableCab">Ciudad</th>
-                        <th class="tableCab">hora</th>
-                        <th class="tableCab">Acciones</th>
-                    </tr>
-                    <tr>
-                        <td>pasto</td>
-                        <td>11:53pm</td>
-                        <td>
-                            <button class="btnver">Ver</button>
-                            <button class="btnborrar">Borrar</button>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>pasto</td>
-                        <td>11:53pm</td>
-                        <td>
-                            <button class="btnver">Ver</button>
-                            <button class="btnborrar">Borrar</button>
-                        </td>
+                        <th class="tableCab">Dia</th>
+                        <th class="tableCab">Clima</th>
+                        <th class="tableCab">Temperatura</th>
+                        <th class="tableCab">Humedad</th>
+                        <th class="tableCab">Probabilidad de lluvia</th>
                     </tr>
                 </table>
             </div>
         </section>
     </main>
     <div class="decor"></div>
-    <!--
-    <div class="title">
-        <h1>Consultar Clima</h1>
-    </div>
-
-    <div class="main">
-        <input type="text" id="nombreCiudad" placeholder="Ingrese nombre de Ciudad ej: Pasto, Cali"> <br> <br>
-        <button id="ciudadClima">Obtener clima</button>
-        
-        <h2>Ciudad: <h2 id="ciudad"></h2></h2>
-        <h2>Denotacion del Pais: <h2 id="pais"></h2></h2>
-        
-        <div>
-            <table>
-                <tr>
-                    <th>Clima</th>
-                    <th>Viento</th>
-                    <th>Humedad</th>
-                    <th>Temperatura</th>
-                </tr>
-                <tr>
-                    <td id="clima"></td>
-                    <td id="viento"></td>
-                    <td id="humedad"></td>
-                    <td id="temperatura"></td>
-                </tr>
-            </table>
-        </div>
-
-    </div>
-
-    <div class="footer">
-        <h6>Creado Por Brayan D. Tobar</h6>
-    </div> -->
     <script type="module" src="js/script.js"></script>
 </body>
 </html>

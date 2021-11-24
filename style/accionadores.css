@@ -30,27 +30,3 @@
 .btnsearch:hover{
     background-color: #6cdbeb;
 }
-
-.btnborrar,.btnver{
-    color: white;
-    width: 70px;
-    border: none;
-    padding: 0.4rem;
-    border-radius: 0.6rem;
-    margin: 0.3rem;
-}
-
-.btnborrar {
-    background-color: rgb(226, 144, 51);
-}
-.btnver{
-    background-color: rgb(62, 192, 45);
-}
-
-.btnborrar:hover {
-    background-color: rgb(202, 131, 49);
-}
-
-.btnver:hover {
-    background-color: rgb(57, 172, 42);;
-}
