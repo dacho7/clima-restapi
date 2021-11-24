@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    min-height: 100vh;
+    background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+    display: flex;  
+    align-items: center; 
+    justify-content: center;
+}
+
+.titulo {
+    text-align: center;
+    padding-top: 5vh;
+    padding-bottom: 2vh;
+}
+
+.contorno {
+    background: white;
+    min-height: 80vh;
+    width: 60%;
+    background: linear-gradient(
+        to right bottom, 
+        rgba(255, 255, 255, 0.7), 
+        rgba(255, 255, 255, 0.3)
+    );
+    border-radius: 2rem;
+    z-index: 2;
+    backdrop-filter: blur(50rem);
+}
+
+.decor {
+    background: white;
+    background: linear-gradient(
+        to right bottom, 
+        rgba(255, 255, 255, 0.8), 
+        rgba(255, 255, 255, 0.3)
+    );
+    height: 10rem;
+    width: 10rem;
+    position: absolute;
+    top: 5%;
+    right: 15%;
+    border-radius: 50%;
+}
+
+.busqueda{
+    justify-content: center;
+    text-align: center;
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+}
+
+.resultSuperior,.resultInferior{
+    display: flex;
+    align-items: center;
+    padding: 1 rem;
+}
+
+.resultElemnts1 {
+    padding-left: 15%;
+}
+
+.resultElemnts2{
+    padding-left: 8%;
+}
+
+.resultElemnts2{
+    padding-right: 5%;
+}
+    
+.resultcity,.resultHumedad{
+    padding-left: 15%;
+    margin: 1rem 0rem;
+}
+
+.historialTitulo{
+    text-align: center;
+}
+
+.historial{
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.consultas{
+    text-align: center;
+    align-items: center;
+}
+
+.tableCab{
+    align-self: center;
+    width: 4%;
+}

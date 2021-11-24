@@ -1,6 +1,7 @@
-##Aplicacion estatica consulta de clima
+## Aplicacion estatica consulta de clima
 
-##  Tecnologias Usadas
-- javascript
-- Html5
+## Tecnologias Usadas
+- Javascript
+- Html
+- Css
 - Api de openweathermap

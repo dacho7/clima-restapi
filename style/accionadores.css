@@ -1,0 +1,56 @@
+.inBusqueda{
+    background: linear-gradient(
+        to right bottom, 
+        rgba(255, 255, 255, 0.7), 
+        rgba(255, 255, 255, 0.3)
+    );
+    width: 50%;
+    border: none;
+    border-radius: 2rem;
+    padding: 0.7rem;
+}
+
+.inBusqueda:focus {
+    outline:none;
+    background-color: white;
+}
+
+.btnsearch{
+    border-radius: 1rem;
+    border: none;
+    width: 80px;
+    padding: 0.7rem;
+    margin-left: 1%;
+    background-color: #10c4e1;
+    color: white;
+    font-size: 15px;
+}
+
+
+.btnsearch:hover{
+    background-color: #6cdbeb;
+}
+
+.btnborrar,.btnver{
+    color: white;
+    width: 70px;
+    border: none;
+    padding: 0.4rem;
+    border-radius: 0.6rem;
+    margin: 0.3rem;
+}
+
+.btnborrar {
+    background-color: rgb(226, 144, 51);
+}
+.btnver{
+    background-color: rgb(62, 192, 45);
+}
+
+.btnborrar:hover {
+    background-color: rgb(202, 131, 49);
+}
+
+.btnver:hover {
+    background-color: rgb(57, 172, 42);;
+}
