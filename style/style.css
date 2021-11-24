@@ -104,3 +104,11 @@ main {
 table {
     color: rgb(59, 58, 58);
 }
+
+.resultado {
+    background: black;
+    background: linear-gradient(to right top, #aadad1, #63e3f6);
+    padding: 1rem;
+    margin: 2rem;
+    border-radius: 1rem;
+}

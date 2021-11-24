@@ -78,33 +78,34 @@ function completarDias(dias){
 
 function asignarImagen(clima){
 
-    let imagen = ""
+    let imagen = "";
+
     if (clima === "Clear sky"){
-        imagen = "./recursos/imagenes/clear-day.png"
+        imagen = "./recursos/imagenes/clear-day.png";
     } else if(clima === "Few clouds") {
-        imagen = "./recursos/imagenes/partly-cloudy-day.png"
+        imagen = "./recursos/imagenes/partly-cloudy-day.png";
     } else if(clima === "Scattered clouds"){
-        imagen = "./recursos/imagenes/cloudy.png"
+        imagen = "./recursos/imagenes/cloudy.png";
     } else if(clima === "Broken clouds"){
-        imagen = "./recursos/imagenes/cloudy.png"
+        imagen = "./recursos/imagenes/cloudy.png";
     } else if(clima === "Shower rain"){
-        imagen = "./recursos/imagenes/rain.png"
+        imagen = "./recursos/imagenes/rain.png";
     } else if(clima === "Rain"){
-        imagen = "./recursos/imagenes/rain.png"
+        imagen = "./recursos/imagenes/rain.png";
     } else if(clima === "thunderstorm"){
-        imagen = "./recursos/imagenes/rain.png"
+        imagen = "./recursos/imagenes/rain.png";
     } else if(clima === "Snow"){
-        imagen = "./recursos/imagenes/snow.png"
+        imagen = "./recursos/imagenes/snow.png";
     } else if(clima === "Fog"){
-        imagen = "./recursos/imagenes/fog.png"
+        imagen = "./recursos/imagenes/fog.png";
     } else if(clima === "Drizzle"){
-        imagen = "./recursos/imagenes/fog.png"
+        imagen = "./recursos/imagenes/fog.png";
     } else if(clima === "Clear"){
-        imagen = "./recursos/imagenes/clear-day.png"
+        imagen = "./recursos/imagenes/clear-day.png";
     } else if(clima === "Clouds"){
-        imagen = "./recursos/imagenes/cloudy.png"
+        imagen = "./recursos/imagenes/cloudy.png";
     } else {
-        imagen = "./recursos/imagenes/sleet.png"
+        imagen = "./recursos/imagenes/sleet.png";
     } 
 
     return imagen;
