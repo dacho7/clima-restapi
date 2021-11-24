@@ -23,6 +23,10 @@ extraerButton.addEventListener("click", async () => {
 
         consultarDiasSiguientes(res.coord.lat, res.coord.lon);
 
+        const ima = asignarImagen(res.weather[0].main);
+
+        document.getElementById("imagen").src = ima;
+
         document.getElementById("ciudad").innerHTML = "Ciudad: "+res.name+", "+new Date().toUTCString();
         document.getElementById("clima").innerHTML = "Clima: "+res.weather[0].main;
         document.getElementById("descripClima").innerHTML = "Descripción: "+res.weather[0].description;
@@ -72,12 +76,36 @@ function completarDias(dias){
     });
 }
 
+function asignarImagen(clima){
 
-const limpiarDatos = () => {
-    document.getElementById("ciudad").innerHTML = "Ciudad: ";
-    document.getElementById("clima").innerHTML = "Clima: ";
-    document.getElementById("descripClima").innerHTML = "Descripción: ";
-    document.getElementById("viento").innerHTML = "Viento: ";
-    document.getElementById("humedad").innerHTML = "Humedad: ";
-    document.getElementById("temperatura").innerHTML = "Temperatura: ";
+    let imagen = ""
+    if (clima === "Clear sky"){
+        imagen = "./recursos/imagenes/clear-day.png"
+    } else if(clima === "Few clouds") {
+        imagen = "./recursos/imagenes/partly-cloudy-day.png"
+    } else if(clima === "Scattered clouds"){
+        imagen = "./recursos/imagenes/cloudy.png"
+    } else if(clima === "Broken clouds"){
+        imagen = "./recursos/imagenes/cloudy.png"
+    } else if(clima === "Shower rain"){
+        imagen = "./recursos/imagenes/rain.png"
+    } else if(clima === "Rain"){
+        imagen = "./recursos/imagenes/rain.png"
+    } else if(clima === "thunderstorm"){
+        imagen = "./recursos/imagenes/rain.png"
+    } else if(clima === "Snow"){
+        imagen = "./recursos/imagenes/snow.png"
+    } else if(clima === "Fog"){
+        imagen = "./recursos/imagenes/fog.png"
+    } else if(clima === "Drizzle"){
+        imagen = "./recursos/imagenes/fog.png"
+    } else if(clima === "Clear"){
+        imagen = "./recursos/imagenes/clear-day.png"
+    } else if(clima === "Clouds"){
+        imagen = "./recursos/imagenes/cloudy.png"
+    } else {
+        imagen = "./recursos/imagenes/sleet.png"
+    } 
+
+    return imagen;
 }
